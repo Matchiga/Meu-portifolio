@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade Prática 14 </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Matheus</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Bem-vindo ao Meu Site</h1>
+            <p class="lead">Um site simples feito com HTML, CSS e Bootstrap</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <section class="container my-5 text-center">
+            <div class="col">
+                <div class="mb-5">
+                    <h2 class="mb-3">Sobre</h2>
+                    <p class="lead">Meu nome é Matheus, conhecido como Chiga. Tenho 24 anos, sou desenvolvedor .NET
+                        atuando na Ploomes, atualmente estou cursando Engenharia de Software.</p>
+                </div>
+
+                <div class="mb-5">
+                    <h2 class="mb-3">Meus Serviços</h2>
+                    <p class="lead">Ofereço uma ampla gama de serviços, incluindo design de sites, desenvolvimento
+                        back-end (.NET) e otimização de SEO para melhorar sua presença online de maneira profissional.
+                    </p>
+                </div>
+
+                <div class="mb-5">
+                    <h2 class="mb-3">Contato</h2>
+                    <p class="lead">Entre em contato conosco para saber mais sobre nossos serviços e como podemos ajudar
+                        a impulsionar seu negócio na internet! Arraste para baixo e preencha o formulário</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container my-5">
+            <h2 class="text-center mb-4">Galeria de Imagens</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="https://via.placeholder.com/400x300" class="img-fluid rounded" alt="Imagem 1">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="https://via.placeholder.com/400x300" class="img-fluid rounded" alt="Imagem 2">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="https://via.placeholder.com/400x300" class="img-fluid rounded" alt="Imagem 3">
+                </div>
+            </div>
+            <p class="text-center ">Ainda não há imagens, pois estou iniciando este projeto web como meu primeiro
+                portfólio de front-end.</p>
+        </section>
+
+        <!-- <section class="container my-5">
+            <h2 class="text-center mb-4">O que meus clientes dizem:</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card testimonial">
+                        <div class="card-body">
+                            <h5 class="card-title">João Cunha</h5>
+                            <p class="card-text">"A equipe foi excelente! Meu site ficou perfeito e com uma ótima
+                                experiência de usuário."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card testimonial">
+                        <div class="card-body">
+                            <h5 class="card-title">Maria Santos</h5>
+                            <p class="card-text">"O suporte foi impecável. Muito satisfeita com o trabalho!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card testimonial">
+                        <div class="card-body">
+                            <h5 class="card-title">Carlos Almeida</h5>
+                            <p class="card-text">"Recomendo fortemente. Profissionalismo e qualidade."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="container my-5">
+            <h2 class="text-center mb-4">Contato</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="name" placeholder="Seu nome" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Seu e-mail" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Sua mensagem" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+
+
+    </main>
+
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 Matheus Chiga. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

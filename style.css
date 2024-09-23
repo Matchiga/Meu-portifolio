@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1,
+h2 {
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+footer {
+    background-color: #f8f9fa;
+}
+
+.col h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.col p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.col div {
+    padding: 20px 0;
+    background-color: #e7f1ff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.gallery-img {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.testimonial {
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
